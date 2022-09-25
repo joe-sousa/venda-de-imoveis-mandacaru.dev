@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Spring Boot Thymeleaf Hello World Example</title>
+
+</head>
+
+<body>
+	<div>
+		<h1>Spring Boot Web Thymeleaf Example</h1>
+		<h2>
+			<span th:text="'Hello, ' + ${message}"></span>
+		</h2>
+	</div>
+
+	<p th:text="#{welcome}">Default Channel Name</p>
+
+	<ol>
+		<li th:each="task : ${tasks}" th:text="${task}"></li>
+	</ol>
+</body>
+</html>

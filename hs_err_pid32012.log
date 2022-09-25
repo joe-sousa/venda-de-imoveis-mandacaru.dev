@@ -1,0 +1,33 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f817a6cf0ad, pid=32012, tid=32032
+#
+# JRE version: OpenJDK Runtime Environment (11.0.11+9) (build 11.0.11+9-Ubuntu-0ubuntu2.20.04)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.11+9-Ubuntu-0ubuntu2.20.04, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x30ad]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/lib/systemd/systemd-coredump %P %u %g %s %t 9223372036854775808 %h" (or dumping to /home/user/Área de Trabalho/TOOLKIT MANDACARU/aula_springboot/core.32012)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-lts
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:36737 -javaagent:/home/user/eclipse/jee-2022-06/eclipse/configuration/org.eclipse.osgi/401/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 br.ufc.mandacaru.aula.MandacaruApplicattion
+
+Host: Intel(R) Core(TM) i3-4005U CPU @ 1.70GHz, 4 cores, 3G, Linux Mint 20.3 Una
+Time: Mon Aug  8 20:48:39 2022 -05 elapsed time: 1512.367036 seconds (0d 0h 25m 12s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f8174131800):  JavaThread "Signal Dispatcher" daemon [_thread_in_vm, id=32032, stack(0x00007f815487c000,0x00007f815497d000)]
+
+Stack: [0x00007f815487c000,0x00007f815497d000],  sp=0x00007f815497a1f0,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x30ad]
+C  [libjimage.so+0x3da2]
+C  [libjimage.so+0x4291]  JIMAGE_FindResource+0xf1
+V  [libjvm.so+0x5b0731]
